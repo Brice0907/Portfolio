@@ -34,15 +34,15 @@
         justify-content: space-around;
         align-items: center;
         font-size: 18px;
-        
+
         &_bloc {
-            &_href{
+            &_href {
                 color: white;
                 text-decoration: none;
                 padding: 9px;
                 border: solid 1px #00d8ff;
                 animation: lighting 4s infinite;
-                
+
             }
         }
     }
@@ -59,6 +59,7 @@
     &_text {
         font-size: 43px;
         margin-left: 5px;
+
         &_span {
             font-family: 'Open sans';
             color: #00d8ff;
@@ -73,6 +74,7 @@
         border-radius: 15px;
         background-color: black;
         margin-right: 5px;
+
         &_logo {
             font-size: 22px;
             color: white;
@@ -91,15 +93,16 @@
 //     animation-duration: 7s;
 // }
 
-.tp{
+.tp {
     position: relative;
     top: -80px;
 }
+
 .bloc_page {
     max-width: 1240px;
     margin: auto;
     padding-top: 50px;
-    
+
     &_concernant {
         &_titre {
             // font-family: 'Open Sans';
@@ -148,7 +151,7 @@
                 font-size: 21px;
                 line-height: 25px;
                 letter-spacing: 1px;
-                
+
             }
 
             &_logo {
@@ -158,6 +161,7 @@
 
                 &_style {
                     margin: auto;
+                    margin-top: 3px;
                     width: 80px;
                 }
             }
@@ -174,10 +178,11 @@
         }
 
         &_fond {
-           width: 100%;
+            width: 100%;
             margin: auto;
-            position:absolute;
-            top: 0; left: 0; 
+            position: absolute;
+            top: 0;
+            left: 0;
             display: flex;
             justify-content: center;
             z-index: -1;
@@ -187,7 +192,7 @@
                 max-height: 900px;
                 max-width: 950px;
                 opacity: 0.03;
-                
+
             }
         }
     }
@@ -201,7 +206,7 @@
     }
 
     &_projet {
-        
+
         &_bloc {
             max-width: 1000px;
             height: 400px;
@@ -238,7 +243,8 @@
                         background: #212F3C;
                         border-radius: 10px;
                         box-shadow: 0px 0px 5px black;
-                        &_href{
+
+                        &_href {
                             color: white;
                             width: 45px;
                             height: 45px;
@@ -350,17 +356,19 @@
     }
 }
 
-.anim_propos{
+.anim_propos {
     animation: apparitionPropos;
     opacity: 1;
     animation-duration: 6.5s;
 }
-.anim_competences{
+
+.anim_competences {
     animation: apparitionCompetences;
     opacity: 1;
     animation-duration: 7s;
 }
-.anim_outils{
+
+.anim_outils {
     animation: apparitionOutils;
     opacity: 1;
     animation-duration: 7.5s;
@@ -372,46 +380,59 @@
     height: 200px;
     background: black;
     padding-top: 30px;
-    &_line{
+
+    &_line {
         margin: auto;
         width: 100px;
         border: 1px solid white;
     }
-    &_logo{
+
+    &_logo {
         text-align: center;
         font-size: 55px;
     }
-    &_text{
+
+    &_text {
         margin-top: 30px;
         text-align: center;
     }
-    &_bloc{
+
+    &_bloc {
         margin-top: 15px;
         text-align: center;
-        &_logo{
+
+        &_logo {
             font-size: 23px;
             margin-right: 5px;
         }
     }
 }
 
-.animation{
+.animation {
     position: absolute;
-    background-color: black;       // couleur à voir
+    background-color: black; // couleur à voir
     opacity: 0;
-    top: 0; right: 0; left: 0; bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     animation: loader;
     animation-duration: 5s;
     pointer-events: none;
-    &_page{
+
+    &_page {
         width: 125px;
         height: 90px;
         position: absolute;
         margin: auto;
-        top: 0; right: 0; left: 0; bottom: 0;
-        animation: logo;     
-        animation-duration: 5s;            
-        &_top{
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        animation: logo;
+        animation-duration: 5s;
+
+        &_top {
             border: 2px solid white;
             opacity: 1;
             width: 125px;
@@ -420,7 +441,8 @@
             animation: barreTop;
             animation-duration: 7s;
         }
-        &_bot{
+
+        &_bot {
             border: 2px solid white;
             opacity: 1;
             width: 125px;
@@ -429,10 +451,12 @@
             animation: barreBot;
             animation-duration: 7s;
         }
-        &_letter{
+
+        &_letter {
             display: flex;
             justify-content: space-around;
-            &_left{
+
+            &_left {
                 font-size: 75px;
                 opacity: 0;
                 position: absolute;
@@ -440,7 +464,8 @@
                 animation: letterLeft;
                 animation-duration: 7s;
             }
-            &_right{
+
+            &_right {
                 font-size: 75px;
                 opacity: 0;
                 margin-left: -10px;
@@ -452,56 +477,65 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .bloc_page_projet_bloc{
+    .bloc_page_projet_bloc {
         flex-direction: column;
         max-width: 720px;
         height: 550px;
-        &_img{
+
+        &_img {
             width: 100%;
-            
-            &_view{
+
+            &_view {
                 width: 100%;
                 border-top-right-radius: 0px;
                 border-bottom-left-radius: 15px;
             }
         }
-        &_text{
+
+        &_text {
             width: 100%;
             border-top-right-radius: 15px;
             border-bottom-left-radius: 0px;
         }
     }
-    .reverse_bloc{
-        &_text{
+
+    .reverse_bloc {
+        &_text {
             border-top-left-radius: 15px;
             border-bottom-right-radius: 0px;
         }
-        &_img{
+
+        &_img {
             border-top-left-radius: 0px;
             border-bottom-right-radius: 15px;
         }
-        &_logo{
+
+        &_logo {
             justify-content: flex-end;
         }
     }
-    .bloc_page_concernant_fond{
-        &_img{
+
+    .bloc_page_concernant_fond {
+        &_img {
             max-width: 750px;
         }
     }
 }
 
-@media screen and (max-width: 770px){
-    .nav_bar_bloc_href{
+@media screen and (max-width: 770px) {
+    .nav_bar_bloc_href {
         font-size: 16px;
     }
-    .header{
+
+    .header {
         flex-direction: column;
         margin-bottom: 40px;
-        &_text{
+
+        &_text {
             font-size: 30px;
         }
-        &_bloc{
+
+        &_bloc {
             flex-direction: row;
             margin: auto;
             margin-top: 10px;
@@ -509,40 +543,50 @@
             padding: 10px 10px;
         }
     }
-    .bloc_page{
-        &_concernant{
-            &_bloc{
+
+    .bloc_page {
+        &_concernant {
+            &_bloc {
                 margin-bottom: 35px;
-                &_title_h2{
+
+                &_title_h2 {
                     font-size: 36px;
                 }
-                &_text{
+
+                &_text {
                     font-size: 18px;
                 }
-                &_logo{
+
+                &_logo {
                     flex-wrap: wrap;
                 }
             }
         }
-        &_line{
+
+        &_line {
             width: 300px;
         }
-        &_projet_bloc{
+
+        &_projet_bloc {
             max-width: 350px;
             height: 530px;
-            &_img{
+
+            &_img {
                 max-height: 280px;
-                &_view{
+
+                &_view {
                     max-height: 280px;
                 }
             }
-            &_text{
+
+            &_text {
                 height: 320px;
             }
         }
     }
-    .bloc_page_concernant_fond{
-        &_img{
+
+    .bloc_page_concernant_fond {
+        &_img {
             max-width: 370px;
         }
     }
